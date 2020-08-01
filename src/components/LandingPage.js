@@ -11,11 +11,17 @@ class LandingPage extends Component{
                 <Link to={{
                     pathname:elem.urls.full,
                     key:elem.id,
-                    hash:elem.user.profile_image.small
+                    hash:elem.user.profile_image.small,
+                    aboutProps:{
+                        imageUrl :elem.urls.full,
+                        profileImage:elem.user.profile_image.small,
+                        userName: elem.user.username,
+                        fullName:elem.user.first_name+' '+elem.user.last_name
+                    }
                 }}>
                     <div className="grid-item">
                         <img className="hvr" src={elem.urls.full}></img>
-                        <img className="profileImage" src={elem.user.profile_image.small}/> <p className="textOverImage">Image by <span className="userName">{elem.user.first_name+' '+elem.user.last_name}</span></p>
+                        <img className="profileImage" src={elem.user.profile_image.small}/> <p className="textOverImage">Image by <span className="user">{elem.user.first_name+' '+elem.user.last_name}</span></p>
                     </div>
                 </Link>
 

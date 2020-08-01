@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount(){
     var store = []
-    axios.get("https://api.unsplash.com/photos/?client_id=QfXd71TsBLAcVluOiBe6ZJsltwJnTIV8WVjD24lovvE&query=office").then(response => {
+    axios.get("https://api.unsplash.com/photos/?client_id=QfXd71TsBLAcVluOiBe6ZJsltwJnTIV8WVjD24lovvE&query=water").then(response => {
         console.log(response.data);
         response.data.splice(0,1);
         this.setState({Images:response.data});
@@ -40,6 +40,7 @@ class App extends Component {
     var link = document.createElement('a');
     link.href = e.view.location.pathname.slice(1);
     link.download = 'Download.jpg';
+    link.target ="_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -77,7 +78,7 @@ class App extends Component {
       <div className="App">
          <Switch>
              <Route path={'/'} exact render = {() => <LandingPage Images={this.state.Images} onchangeHandler={this.onchangeHandler} searchHandler={this.searchHandler} ImagesForSiblings={this.state.ImagesForSiblings} LoadMore={this.LoadMore}/>}/>
-             <Route path={'/:title'} render = {() => <ImageDownload  Imagedownloaded={this.ImageDownload}/>}/>
+             <Route path={'/:title'} render = {(props) => <ImageDownload  Imagedownloaded={this.ImageDownload} {...props}/>}/>
          </Switch>
       </div>
     );

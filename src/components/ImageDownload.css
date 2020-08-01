@@ -17,7 +17,7 @@
     position: absolute;  
     background-color: #fefefe;
     /* margin: auto; 15% from the top and centered */
-    padding: 50px 20px 20px 125px;
+    padding: 64px 20px 20px 125px;
     border: 1px solid #888;
     width: 55%; /* Could be more or less, depending on screen size */
     /* bottom: 27px;
@@ -41,7 +41,7 @@
     width: 115px;
     height: 33px;
     left: 50%;
-    margin-left: -6.5%;
+    margin-left: -11.5%;
     border-radius: 18px;
     background-color: rgba(0, 217, 224, 0.993);
     color: whitesmoke;
@@ -52,7 +52,7 @@
     position: absolute;
     width: 45px;
     height: 45px;
-    left: 5px;
+    left: 12px;
     border-radius: 27px;
   }
 
@@ -61,16 +61,32 @@
     width: 33px;
     height: 33px;
     top: 12px;
-    left: 120px;
+    left: 112px;
     border-radius: 18px;
+    margin-right: 4px;
   }
 
   .cancelIcon{
     position: absolute;
-    top: 51px;
+    top: 39px;
     right: 114px;
     color: white;
-    font-size: xx-large;
+    font-size: xxx-large;
     background-color: grey;
-    border-radius: 19px;
+    border-radius: 26px;
+  }
+  .fullName{
+    position: absolute;
+    top: 14px;
+    /* right: 114px; */
+    /* display: none; */
+    left: 180px;
+    font-weight: bold;
+  }
+
+  .userName{
+    position: absolute;
+    top: 30px;
+    left: 178px;
+    color: #888;
   }
