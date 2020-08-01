@@ -1,9 +1,10 @@
 {
+  "homepage": "https://tarunkumarpatel02.github.io/Assignment/",
+  "proxy": "https://tarunkumarpatel02.github.io/Assignment/",
   "name": "react-complete-guide",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
     "react": "^16.0.0",
@@ -16,15 +17,16 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
@@ -32,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

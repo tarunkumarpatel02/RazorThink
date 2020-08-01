@@ -16,7 +16,7 @@ class ImageDownload extends Component{
                  <div className="modal-content">
                   <Link to={{pathname:'/'}}><FiX onClick={this.props.searchHandler} className="cancelIcon"/></Link>
                     <div className="profileImageWrapper"><img className="profileImage2" src={window.location.hash.slice(1)}></img></div><br/>
-                    <div><img className=".img" src={window.location.pathname.slice(1)}/></div>
+                    <div><img className=".img" src={window.location.pathname.slice(12)}/></div>
                     <button className="download" onClick={this.props.Imagedownloaded}>Download</button>
                 </div>
             </div> 
