@@ -1,0 +1,84 @@
+.hvr{
+    width: 320px;
+    height: 214px;
+    border-radius: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 62px;
+}
+
+.grid-item {
+    text-align: center;
+    position: relative;
+  }
+.textOverImage{
+    position:absolute;
+    top: 165px;
+    left: 54px;
+    color:white;
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.profileImage{
+    position:absolute;
+    width: 33px;
+    height: 33px;
+    top: 170px;
+    left: 13px;
+    border-radius: 18px;
+}
+
+.userName{
+    color:rgba(0, 217, 224, 0.993);
+}
+  .searchImg{
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .textBox{
+      width:440px;
+      height:40px;
+      border : 1px solid #eee3eb;
+      border-radius: 5px;
+  }
+
+  .Loadmore{
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .loadmoreBtn{
+    width: 115px;
+    height: 33px;
+    left: 50%;
+    margin-left: -6.5%;
+    border-radius: 18px;
+    background-color: rgba(0, 217, 224, 0.993);
+    color: whitesmoke;
+    border-color: white;
+  }
+
+  .searchIcon{
+      color:white;
+      font-size: x-large;
+      position: absolute;
+      top: 3px;
+      left: 425px;
+      border: 1px solid aquamarine;
+      border-radius: 24px;
+      padding: 6px;
+      background-color: aquamarine;
+}
