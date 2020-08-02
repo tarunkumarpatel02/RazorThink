@@ -21,7 +21,7 @@
   }
 .textOverImage{
     position:absolute;
-    top: 165px;
+    top: 12.08vw;
     left: 54px;
     color:white;
     font-size: 13px;
@@ -32,7 +32,7 @@
     position:absolute;
     width: 33px;
     height: 33px;
-    top: 170px;
+    top: 12.45vw;
     left: 13px;
     border-radius: 18px;
 }
