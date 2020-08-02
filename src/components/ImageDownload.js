@@ -19,7 +19,7 @@ class ImageDownload extends Component{
                   <span className="userName">@ {this.props.location.aboutProps.userName}</span>
                     <div className="profileImageWrapper"><img className="profileImage2" src={this.props.location.aboutProps.profileImage}></img></div>
                     <div><img className=".img" src={this.props.location.aboutProps.imageUrl}/></div>
-                    <button className="download" onClick={this.props.Imagedownloaded}>Download</button>
+                    <button className="download" onClick={()=>this.props.Imagedownloaded(this.props.location.aboutProps.imageUrl)}>Download</button>
                 </div>
             </div> 
         );

@@ -114,7 +114,7 @@ class App extends Component {
 
   ImageDownload=(e)=>{
     var link = document.createElement('a');
-    link.href = e.view.location.pathname.slice(1);
+    link.href = e;
     link.download = 'Download.jpg';
     link.target ="_blank";
     document.body.appendChild(link);
