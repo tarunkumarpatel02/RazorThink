@@ -31,10 +31,10 @@
   }
 
   img{
-      width:643px;
-      height:489px;
-      display: block;
-      margin-bottom: 20px;
+    width: 48vw;
+    height: 36vw;
+    display: block;
+    margin-bottom: 20px;
   }
 
   .download{
@@ -69,7 +69,7 @@
   .cancelIcon{
     position: absolute;
     top: 39px;
-    right: 114px;
+    right: 7vw;
     color: white;
     font-size: xxx-large;
     background-color: grey;
