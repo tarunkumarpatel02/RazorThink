@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-download-link": "^2.3.0",
